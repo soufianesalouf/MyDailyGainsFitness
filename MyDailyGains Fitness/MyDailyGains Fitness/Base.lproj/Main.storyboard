@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="Fsb-bx-Jqj" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="g1S-af-Knt"/>
+                        <segue destination="nsf-Fs-cIF" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="JkR-wu-1Rs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="344"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="ItT-eu-qdg">
+            <objects>
+                <viewController id="Fsb-bx-Jqj" customClass="MenuVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfJ-gp-Qk7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iI-lP-75e" customClass="GradientView" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcc-Ma-vdv">
+                                        <rect key="frame" x="87.5" y="36.5" width="200" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ifr-O2-xsu"/>
+                                            <constraint firstAttribute="height" constant="25" id="tko-pB-CXu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="hHt-r1-FxG"/>
+                                    <constraint firstItem="bcc-Ma-vdv" firstAttribute="centerX" secondItem="5iI-lP-75e" secondAttribute="centerX" id="mul-SH-Qrb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5iI-lP-75e" firstAttribute="leading" secondItem="OlH-Wa-9zU" secondAttribute="leading" id="c7n-dV-vHy"/>
+                            <constraint firstItem="5iI-lP-75e" firstAttribute="trailing" secondItem="OlH-Wa-9zU" secondAttribute="trailing" id="hEg-Mf-40X"/>
+                            <constraint firstItem="5iI-lP-75e" firstAttribute="top" secondItem="wfJ-gp-Qk7" secondAttribute="top" id="hM8-75-vsh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OlH-Wa-9zU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kop-Mq-WWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="4"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="arZ-cP-mAk">
+            <objects>
+                <viewController id="nsf-Fs-cIF" customClass="HomeVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tu5-kM-UuU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-e2-r5f" customClass="GradientView" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ena-ea-Sv8">
+                                        <rect key="frame" x="87.5" y="36.5" width="200" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Wif-0H-ADz"/>
+                                            <constraint firstAttribute="height" constant="25" id="beF-bg-Fbe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6g-Tg-HGQ">
+                                        <rect key="frame" x="12" y="40" width="24" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="9Eb-Sg-mId"/>
+                                            <constraint firstAttribute="width" constant="24" id="nOS-qT-7AN"/>
+                                        </constraints>
+                                        <state key="normal" image="burger"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ena-ea-Sv8" firstAttribute="centerX" secondItem="xKh-e2-r5f" secondAttribute="centerX" id="C4x-Ty-0GG"/>
+                                    <constraint firstAttribute="bottom" secondItem="H6g-Tg-HGQ" secondAttribute="bottom" constant="12" id="Ram-wO-phF"/>
+                                    <constraint firstItem="Ena-ea-Sv8" firstAttribute="centerY" secondItem="H6g-Tg-HGQ" secondAttribute="centerY" id="qiA-bQ-u0Y"/>
+                                    <constraint firstAttribute="height" constant="70" id="svM-TQ-j7d"/>
+                                    <constraint firstItem="H6g-Tg-HGQ" firstAttribute="leading" secondItem="xKh-e2-r5f" secondAttribute="leading" constant="12" id="yPE-Nh-1Hj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xKh-e2-r5f" firstAttribute="leading" secondItem="93c-v2-OAj" secondAttribute="leading" id="gBP-tc-EiH"/>
+                            <constraint firstItem="xKh-e2-r5f" firstAttribute="top" secondItem="tu5-kM-UuU" secondAttribute="top" id="o6L-MW-FeB"/>
+                            <constraint firstItem="xKh-e2-r5f" firstAttribute="trailing" secondItem="93c-v2-OAj" secondAttribute="trailing" id="qZZ-rh-x3K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="93c-v2-OAj"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="H6g-Tg-HGQ" id="9Sf-lT-JiV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQO-Zh-Udi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="726"/>
+        </scene>
+        <!--AuthVC-->
+        <scene sceneID="Wn1-R0-1xB">
+            <objects>
+                <viewController storyboardIdentifier="AuthVC" id="a25-ZI-6oU" customClass="AuthVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hA9-TI-WMb" customClass="GradientView" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KLo-51-zPh">
+                                <rect key="frame" x="105.5" y="50" width="165.5" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Daily" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-8H-M6J">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gainz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw0-xy-iVo">
+                                        <rect key="frame" x="99" y="0.0" width="66.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzp-nX-Npq" customClass="RoundedShadowView" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="16" y="154.5" width="343" height="358"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-cn-w5P">
+                                        <rect key="frame" x="20" y="20" width="303" height="268"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2u9-LM-bfn">
+                                                <rect key="frame" x="0.0" y="0.0" width="303" height="59.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjt-lY-fO5" customClass="RoundedButton" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="69.5" width="303" height="59.5"/>
+                                                <color key="backgroundColor" red="0.26274509800000001" green="0.35686274509999999" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                                <state key="normal" title="LOGIN WITH FB">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7f-Yb-bVw" customClass="RoundedButton" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="139" width="303" height="59.5"/>
+                                                <color key="backgroundColor" red="0.80784313730000001" green="0.3294117647" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                                <state key="normal" title="LOGIN WITH G+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tW-2t-830">
+                                                <rect key="frame" x="0.0" y="208.5" width="303" height="59.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJZ-lw-b8F" customClass="RoundedButton" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="288" width="303" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1vm-r7-j6E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title=" BY EMAIL" image="emailIcon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fJZ-lw-b8F" firstAttribute="top" secondItem="pGp-cn-w5P" secondAttribute="bottom" id="4eu-9q-ajt"/>
+                                    <constraint firstAttribute="trailing" secondItem="pGp-cn-w5P" secondAttribute="trailing" constant="20" id="8NU-gf-75p"/>
+                                    <constraint firstAttribute="width" constant="343" id="GfG-kV-EM2"/>
+                                    <constraint firstItem="pGp-cn-w5P" firstAttribute="leading" secondItem="mzp-nX-Npq" secondAttribute="leading" constant="20" id="Qaj-jC-6W4"/>
+                                    <constraint firstAttribute="trailing" secondItem="fJZ-lw-b8F" secondAttribute="trailing" constant="20" id="YGm-Wd-sUU"/>
+                                    <constraint firstItem="fJZ-lw-b8F" firstAttribute="leading" secondItem="mzp-nX-Npq" secondAttribute="leading" constant="20" id="a3x-UR-mhd"/>
+                                    <constraint firstItem="pGp-cn-w5P" firstAttribute="top" secondItem="mzp-nX-Npq" secondAttribute="top" constant="20" id="ltt-eS-UoC"/>
+                                    <constraint firstAttribute="height" constant="358" id="mH1-Am-sPB"/>
+                                    <constraint firstAttribute="bottom" secondItem="fJZ-lw-b8F" secondAttribute="bottom" constant="20" id="uaa-v3-4da"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KLo-51-zPh" firstAttribute="centerX" secondItem="hA9-TI-WMb" secondAttribute="centerX" id="8pB-TL-OZ0"/>
+                            <constraint firstItem="KLo-51-zPh" firstAttribute="top" secondItem="JNO-Wh-8zG" secondAttribute="top" constant="30" id="F5a-Nc-YrQ"/>
+                            <constraint firstItem="mzp-nX-Npq" firstAttribute="centerY" secondItem="hA9-TI-WMb" secondAttribute="centerY" id="Xob-SV-YQi"/>
+                            <constraint firstItem="mzp-nX-Npq" firstAttribute="centerX" secondItem="hA9-TI-WMb" secondAttribute="centerX" id="bn1-Ya-jdD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JNO-Wh-8zG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vwt-4o-1G2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1577" y="360"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="aVG-k2-ojZ">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="vIf-1b-9cn" customClass="LoginVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQf-8A-lOs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7X1-sb-4uB" customClass="GradientView" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss7-Nw-gTG" userLabel="close">
+                                        <rect key="frame" x="8" y="32" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="l4w-Ee-Xhx"/>
+                                            <constraint firstAttribute="height" constant="30" id="w5G-Hi-4fb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Back"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UE-wh-JYZ">
+                                        <rect key="frame" x="130.5" y="34.5" width="115" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="0zJ-SV-SaH"/>
+                                            <constraint firstAttribute="width" constant="115" id="ZBJ-It-Kbu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ss7-Nw-gTG" firstAttribute="leading" secondItem="7X1-sb-4uB" secondAttribute="leading" constant="8" id="EhV-PH-ejN"/>
+                                    <constraint firstItem="7UE-wh-JYZ" firstAttribute="centerY" secondItem="ss7-Nw-gTG" secondAttribute="centerY" id="Mgp-CM-7qX"/>
+                                    <constraint firstItem="7UE-wh-JYZ" firstAttribute="centerX" secondItem="7X1-sb-4uB" secondAttribute="centerX" id="R08-Xy-Ne4"/>
+                                    <constraint firstAttribute="bottom" secondItem="ss7-Nw-gTG" secondAttribute="bottom" constant="8" id="WeI-Vh-aIJ"/>
+                                    <constraint firstAttribute="height" constant="70" id="oxi-Ko-SD5"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="u0t-M9-pYo">
+                                <rect key="frame" x="62.5" y="150" width="250" height="89"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8U-RE-C3p" customClass="InsetTextField" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="1MX-eg-Tml"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itI-5B-Duq">
+                                        <rect key="frame" x="0.0" y="35" width="250" height="2"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="GpD-X9-arX"/>
+                                            <constraint firstAttribute="width" constant="250" id="Mov-B2-6rf"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-KB-DIT" customClass="InsetTextField" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52" width="250" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="uNM-5F-V1V"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwR-DB-ii0">
+                                        <rect key="frame" x="0.0" y="87" width="250" height="2"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="9Ow-CG-M3q"/>
+                                            <constraint firstAttribute="width" constant="250" id="QZb-cv-gKN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0za-cl-X1A" customClass="RoundedButton" customModule="MyDailyGains_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="289" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="VWe-bs-vfn"/>
+                                    <constraint firstAttribute="height" constant="50" id="hh3-Ji-QdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SIGN IN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0za-cl-X1A" firstAttribute="top" secondItem="u0t-M9-pYo" secondAttribute="bottom" constant="50" id="2JV-33-83x"/>
+                            <constraint firstItem="7X1-sb-4uB" firstAttribute="top" secondItem="xQf-8A-lOs" secondAttribute="top" id="hw7-VH-YZW"/>
+                            <constraint firstItem="7X1-sb-4uB" firstAttribute="leading" secondItem="ffd-Av-H1P" secondAttribute="leading" id="jzv-GJ-Gvb"/>
+                            <constraint firstItem="u0t-M9-pYo" firstAttribute="centerX" secondItem="xQf-8A-lOs" secondAttribute="centerX" id="klP-Q6-v1g"/>
+                            <constraint firstItem="u0t-M9-pYo" firstAttribute="top" secondItem="7X1-sb-4uB" secondAttribute="bottom" constant="80" id="mS5-BH-Qql"/>
+                            <constraint firstItem="0za-cl-X1A" firstAttribute="centerX" secondItem="xQf-8A-lOs" secondAttribute="centerX" id="trc-VH-TNe"/>
+                            <constraint firstItem="7X1-sb-4uB" firstAttribute="trailing" secondItem="ffd-Av-H1P" secondAttribute="trailing" id="x5S-2k-Gwx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ffd-Av-H1P"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1j-li-ebF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-756" y="359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="burger" width="40" height="40"/>
+        <image name="emailIcon" width="25" height="16"/>
+    </resources>
+</document>
