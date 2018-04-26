@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Profile" representedClassName="Profile" syncable="YES" codeGenerationType="class">
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="profile_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="user_profile" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user_profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profile" inverseName="profile_user" inverseEntity="Profile" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Profile" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="User" positionX="-63" positionY="27" width="128" height="105"/>
+    </elements>
+</model>
