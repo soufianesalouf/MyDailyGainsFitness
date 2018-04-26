@@ -22,13 +22,20 @@
 		90F984102091EFD300FFBA0D /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9840F2091EFD300FFBA0D /* AuthVC.swift */; };
 		90F984132091F28D00FFBA0D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F984122091F28D00FFBA0D /* AuthService.swift */; };
 		90F984152091F42700FFBA0D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F984142091F42700FFBA0D /* LoginVC.swift */; };
+		90F984192091F88900FFBA0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90F984182091F88800FFBA0D /* GoogleService-Info.plist */; };
+		90F9841B2091FC3D00FFBA0D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9841A2091FC3D00FFBA0D /* DataService.swift */; };
+		90F9841E2092104900FFBA0D /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9841C2092104800FFBA0D /* UIViewControllerExt.swift */; };
+		90F9841F2092104900FFBA0D /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9841D2092104800FFBA0D /* UIViewExt.swift */; };
 		90FD90502090BB06001D8E60 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD904E2090BB06001D8E60 /* CoreDataService.swift */; };
-		90FD90512090BB06001D8E60 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD904F2090BB06001D8E60 /* DataService.swift */; };
+		90FD90512090BB06001D8E60 /* DataService1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD904F2090BB06001D8E60 /* DataService1.swift */; };
 		90FD90542090BB3B001D8E60 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90FD90522090BB3B001D8E60 /* Model.xcdatamodeld */; };
 		90FD90562090CD2E001D8E60 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD90552090CD2E001D8E60 /* UserVC.swift */; };
+		A80BBE278AE0F73D0F8FEA6E /* Pods_MyDailyGains_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A489F2DBBE17A50FBBCCBD8 /* Pods_MyDailyGains_Fitness.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A489F2DBBE17A50FBBCCBD8 /* Pods_MyDailyGains_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDailyGains_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1FA37D81A8D89BB5696413 /* Pods-MyDailyGains Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDailyGains Fitness.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDailyGains Fitness/Pods-MyDailyGains Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		90BDF5B4208D105B00D9E441 /* MyDailyGains Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyDailyGains Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BDF5B7208D105B00D9E441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90BDF5BC208D105B00D9E441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,10 +55,15 @@
 		90F9840F2091EFD300FFBA0D /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		90F984122091F28D00FFBA0D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		90F984142091F42700FFBA0D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		90F984182091F88800FFBA0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90F9841A2091FC3D00FFBA0D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		90F9841C2092104800FFBA0D /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		90F9841D2092104800FFBA0D /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		90FD904E2090BB06001D8E60 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
-		90FD904F2090BB06001D8E60 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		90FD904F2090BB06001D8E60 /* DataService1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService1.swift; sourceTree = "<group>"; };
 		90FD90532090BB3B001D8E60 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		90FD90552090CD2E001D8E60 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		9EBE86617345ADD3C4BA7276 /* Pods-MyDailyGains Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDailyGains Fitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDailyGains Fitness/Pods-MyDailyGains Fitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80BBE278AE0F73D0F8FEA6E /* Pods_MyDailyGains_Fitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47CC96F27A4FD2554A9A6FBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EBE86617345ADD3C4BA7276 /* Pods-MyDailyGains Fitness.debug.xcconfig */,
+				8A1FA37D81A8D89BB5696413 /* Pods-MyDailyGains Fitness.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90BDF5AB208D105B00D9E441 = {
 			isa = PBXGroup;
 			children = (
 				90BDF5B6208D105B00D9E441 /* MyDailyGains Fitness */,
 				90BDF5B5208D105B00D9E441 /* Products */,
+				47CC96F27A4FD2554A9A6FBC /* Pods */,
+				D905F70E2A79E033BE73FB99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +112,7 @@
 				90FD904D2090BB06001D8E60 /* CoreDataServices */,
 				90BDF5DE208D1B2700D9E441 /* Utilities */,
 				90BDF5CC208D11B900D9E441 /* Supporting Files */,
+				90F984202092105A00FFBA0D /* Extensions */,
 				90BDF5CB208D109600D9E441 /* Model */,
 				90BDF5CA208D108900D9E441 /* View */,
 				90BDF5C9208D107F00D9E441 /* Controller */,
@@ -96,6 +121,7 @@
 				90BDF5BE208D106300D9E441 /* Assets.xcassets */,
 				90BDF5C0208D106300D9E441 /* LaunchScreen.storyboard */,
 				90BDF5C3208D106300D9E441 /* Info.plist */,
+				90F984182091F88800FFBA0D /* GoogleService-Info.plist */,
 			);
 			path = "MyDailyGains Fitness";
 			sourceTree = "<group>";
@@ -152,18 +178,36 @@
 			isa = PBXGroup;
 			children = (
 				90F984122091F28D00FFBA0D /* AuthService.swift */,
+				90F9841A2091FC3D00FFBA0D /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		90F984202092105A00FFBA0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90F9841C2092104800FFBA0D /* UIViewControllerExt.swift */,
+				90F9841D2092104800FFBA0D /* UIViewExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		90FD904D2090BB06001D8E60 /* CoreDataServices */ = {
 			isa = PBXGroup;
 			children = (
 				90FD904E2090BB06001D8E60 /* CoreDataService.swift */,
-				90FD904F2090BB06001D8E60 /* DataService.swift */,
+				90FD904F2090BB06001D8E60 /* DataService1.swift */,
 				90FD90522090BB3B001D8E60 /* Model.xcdatamodeld */,
 			);
 			path = CoreDataServices;
+			sourceTree = "<group>";
+		};
+		D905F70E2A79E033BE73FB99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A489F2DBBE17A50FBBCCBD8 /* Pods_MyDailyGains_Fitness.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90BDF5C6208D106300D9E441 /* Build configuration list for PBXNativeTarget "MyDailyGains Fitness" */;
 			buildPhases = (
+				E95E0D7051DA3E5F51365A58 /* [CP] Check Pods Manifest.lock */,
 				90BDF5B0208D105B00D9E441 /* Sources */,
 				90BDF5B1208D105B00D9E441 /* Frameworks */,
 				90BDF5B2208D105B00D9E441 /* Resources */,
+				91B44AD33B84F0728190BD78 /* [CP] Embed Pods Frameworks */,
+				149A4C2B2B6D1215DE1C707D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,12 +273,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BDF5C2208D106300D9E441 /* LaunchScreen.storyboard in Resources */,
+				90F984192091F88900FFBA0D /* GoogleService-Info.plist in Resources */,
 				90BDF5BF208D106300D9E441 /* Assets.xcassets in Resources */,
 				90BDF5BD208D105B00D9E441 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		149A4C2B2B6D1215DE1C707D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDailyGains Fitness/Pods-MyDailyGains Fitness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B44AD33B84F0728190BD78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyDailyGains Fitness/Pods-MyDailyGains Fitness-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDailyGains Fitness/Pods-MyDailyGains Fitness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E95E0D7051DA3E5F51365A58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDailyGains Fitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90BDF5B0208D105B00D9E441 /* Sources */ = {
@@ -240,20 +348,23 @@
 			files = (
 				90BDF5D2208D13F300D9E441 /* HomeVC.swift in Sources */,
 				90BDF5DA208D14C800D9E441 /* InsetTextField.swift in Sources */,
+				90F9841E2092104900FFBA0D /* UIViewControllerExt.swift in Sources */,
 				90FD90502090BB06001D8E60 /* CoreDataService.swift in Sources */,
 				90BDF5DB208D14C800D9E441 /* RoundedShadowView.swift in Sources */,
 				90F984102091EFD300FFBA0D /* AuthVC.swift in Sources */,
 				90BDF5DD208D14C800D9E441 /* RoundedButton.swift in Sources */,
-				90FD90512090BB06001D8E60 /* DataService.swift in Sources */,
+				90FD90512090BB06001D8E60 /* DataService1.swift in Sources */,
 				90BDF5D5208D140800D9E441 /* MenuVC.swift in Sources */,
 				90BDF5DC208D14C800D9E441 /* GradientView.swift in Sources */,
 				90BDF5B8208D105B00D9E441 /* AppDelegate.swift in Sources */,
 				90F984152091F42700FFBA0D /* LoginVC.swift in Sources */,
+				90F9841F2092104900FFBA0D /* UIViewExt.swift in Sources */,
 				90BDF5E0208D1B4A00D9E441 /* Constants.swift in Sources */,
 				90FD90562090CD2E001D8E60 /* UserVC.swift in Sources */,
 				90F984132091F28D00FFBA0D /* AuthService.swift in Sources */,
 				90BDF5D0208D120900D9E441 /* SWRevealViewController.m in Sources */,
 				90FD90542090BB3B001D8E60 /* Model.xcdatamodeld in Sources */,
+				90F9841B2091FC3D00FFBA0D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +506,7 @@
 		};
 		90BDF5C7208D106300D9E441 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EBE86617345ADD3C4BA7276 /* Pods-MyDailyGains Fitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -405,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saloufapps.MyDailyGains-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saloufapps.dailygainz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyDailyGains Fitness/Supporting Files/MyDailyGains Fitness-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -416,6 +528,7 @@
 		};
 		90BDF5C8208D106300D9E441 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1FA37D81A8D89BB5696413 /* Pods-MyDailyGains Fitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -426,7 +539,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saloufapps.MyDailyGains-Fitness";
+				PRODUCT_BUNDLE_IDENTIFIER = com.saloufapps.dailygainz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyDailyGains Fitness/Supporting Files/MyDailyGains Fitness-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
