@@ -132,7 +132,7 @@
         <!--UserVC-->
         <scene sceneID="apO-Ua-4XG">
             <objects>
-                <viewController id="O7d-5r-pwN" customClass="UserVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserVC" id="O7d-5r-pwN" customClass="UserVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qc0-vW-Vc7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,7 +507,7 @@
         <!--LoginVC-->
         <scene sceneID="Xc7-KB-khj">
             <objects>
-                <viewController id="Pod-pJ-gha" customClass="LoginVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="Pod-pJ-gha" customClass="LoginVC" customModule="MyDailyGains_Fitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RbH-xw-ROa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
