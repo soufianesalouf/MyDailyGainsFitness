@@ -27,7 +27,8 @@ class LoginVC: UIViewController {
         if emailField.text != nil && passwordFeild.text != nil {
             AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordFeild.text!) { (success, loginError) in
                 if success {
-                    self.dismiss(animated: true, completion: nil)
+                    self.dismissDetail()
+//                    self.dismiss(animated: true, completion: nil)
                 } else {
                     debugPrint(loginError?.localizedDescription ?? "Couldn't login")
                 }
@@ -35,7 +36,8 @@ class LoginVC: UIViewController {
                 AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordFeild.text!, userCreationComplete: { (success, registerError) in
                     if success {
                         AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordFeild.text!, loginComplete: { (success, nil) in
-                            self.dismiss(animated: true, completion: nil)
+                            self.dismissDetail()
+//                            self.dismiss(animated: true, completion: nil)
                         })
                     } else {
                         debugPrint(registerError?.localizedDescription ?? "Couldn't Register")
@@ -47,7 +49,8 @@ class LoginVC: UIViewController {
     
     
     @IBAction func closeBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
+//        dismiss(animated: true, completion: nil)
     }
 }
 

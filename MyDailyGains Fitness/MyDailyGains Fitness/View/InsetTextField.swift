@@ -12,7 +12,7 @@ class InsetTextField: UITextField {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: COLOR_PURPLE_PLACEHOLDER])
+        let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: PLACEHOLDER_COLOR])
         self.attributedPlaceholder = placeholder
     }
     

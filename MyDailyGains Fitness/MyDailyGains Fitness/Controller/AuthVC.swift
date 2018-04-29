@@ -17,7 +17,8 @@ class AuthVC: UIViewController {
     @IBAction func signInWithEmailPressed(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC")
-        present(loginVC, animated: true, completion:  nil)
+        presentDetail(loginVC)
+//        present(loginVC, animated: true, completion:  nil)
     }
     
     @IBAction func googleSignInPressed(_ sender: Any) {

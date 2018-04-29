@@ -11,4 +11,4 @@ import Foundation
 import UIKit
 
 //Color
-let COLOR_PURPLE_PLACEHOLDER = #colorLiteral(red: 0.3254901961, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
+let PLACEHOLDER_COLOR = #colorLiteral(red: 0.4274509804, green: 0.737254902, blue: 0.3882352941, alpha: 0.5)

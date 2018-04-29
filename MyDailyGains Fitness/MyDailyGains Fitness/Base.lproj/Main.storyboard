@@ -87,16 +87,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-wX-juM">
-                                <rect key="frame" x="99" y="82" width="123" height="59"/>
+                                <rect key="frame" x="99" y="82" width="115" height="59"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soufiane Salouf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-Wh-RNQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="123" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-Wh-RNQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yU-An-RkN">
-                                        <rect key="frame" x="0.0" y="35.5" width="62" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Kg, 173 Cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yU-An-RkN">
+                                        <rect key="frame" x="0.0" y="35.5" width="115" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -121,6 +121,7 @@
                         <viewLayoutGuide key="safeArea" id="OlH-Wa-9zU"/>
                     </view>
                     <connections>
+                        <outlet property="infoLbl" destination="2yU-An-RkN" id="b1W-HJ-IAJ"/>
                         <outlet property="profileIMage" destination="40p-Q4-dlS" id="4Ac-Xb-8Rp"/>
                         <outlet property="usernameLbl" destination="4ms-Wh-RNQ" id="pFt-J9-Z6H"/>
                     </connections>
@@ -144,20 +145,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqd-A0-WLJ" userLabel="close">
-                                                <rect key="frame" x="8" y="32" width="50" height="30"/>
+                                                <rect key="frame" x="8" y="32" width="30" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="2Ie-uv-8He"/>
+                                                    <constraint firstAttribute="width" constant="30" id="2Ie-uv-8He"/>
                                                     <constraint firstAttribute="height" constant="30" id="2Zj-RV-svT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Back"/>
+                                                <state key="normal" image="close"/>
                                                 <connections>
                                                     <action selector="closeWasPressed:" destination="O7d-5r-pwN" eventType="touchUpInside" id="djX-Tj-tdI"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wv-16-OpN">
-                                                <rect key="frame" x="130.5" y="34.5" width="115" height="25"/>
+                                                <rect key="frame" x="130.5" y="34" width="115" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="115" id="gJh-D7-red"/>
                                                     <constraint firstAttribute="height" constant="25" id="gRd-aU-OFa"/>
@@ -220,6 +221,9 @@
                                                         <state key="normal" title="Male">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="maleBtnWasPressed:" destination="O7d-5r-pwN" eventType="touchUpInside" id="Y2N-Z8-z0M"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8d-Vw-OOx">
                                                         <rect key="frame" x="177.5" y="0.0" width="157.5" height="50"/>
@@ -228,6 +232,9 @@
                                                         <state key="normal" title="Female">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="femaleBtnWasPressed:" destination="O7d-5r-pwN" eventType="touchUpInside" id="riw-UP-ZQd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -254,7 +261,7 @@
                                                         <rect key="frame" x="0.0" y="50" width="335" height="24"/>
                                                         <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUW-cX-AHR">
                                                         <rect key="frame" x="0.0" y="86" width="335" height="2"/>
@@ -267,7 +274,7 @@
                                                         <rect key="frame" x="0.0" y="100" width="335" height="24"/>
                                                         <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSs-Ju-Ksr">
                                                         <rect key="frame" x="0.0" y="136" width="335" height="2"/>
@@ -296,6 +303,9 @@
                                                 <real key="value" value="6"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="completeBtnWasPressed:" destination="O7d-5r-pwN" eventType="touchUpInside" id="bcf-43-g1z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -324,7 +334,7 @@
                         <viewLayoutGuide key="safeArea" id="WC0-bb-c5G"/>
                     </view>
                     <connections>
-                        <outlet property="bithdateTextFeild" destination="TJz-Xy-Yhq" id="qqY-qp-DaH"/>
+                        <outlet property="birthDateTextFeild" destination="TJz-Xy-Yhq" id="qqY-qp-DaH"/>
                         <outlet property="completeBtn" destination="ojY-dk-cb2" id="eN5-tb-OiZ"/>
                         <outlet property="femaleBtn" destination="D8d-Vw-OOx" id="cAX-gE-2EQ"/>
                         <outlet property="firstNameTextFeild" destination="Yt9-LH-q6s" id="DT3-Ij-ybL"/>
@@ -519,20 +529,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqC-5l-T86" userLabel="close">
-                                                <rect key="frame" x="8" y="32" width="50" height="30"/>
+                                                <rect key="frame" x="8" y="32" width="30" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="BSA-b3-gsO"/>
+                                                    <constraint firstAttribute="width" constant="30" id="BSA-b3-gsO"/>
                                                     <constraint firstAttribute="height" constant="30" id="bv0-aP-HF8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Back"/>
+                                                <state key="normal" image="back"/>
                                                 <connections>
                                                     <action selector="closeBtnPressed:" destination="Pod-pJ-gha" eventType="touchUpInside" id="Wmw-KH-1lM"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcu-Xy-8P3">
-                                                <rect key="frame" x="130.5" y="34.5" width="115" height="25"/>
+                                                <rect key="frame" x="130.5" y="34" width="115" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="Jqx-bv-Mu4"/>
                                                     <constraint firstAttribute="width" constant="115" id="gJq-iw-iJl"/>
@@ -645,7 +655,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="14" height="25"/>
         <image name="burger" width="40" height="40"/>
+        <image name="close" width="22" height="20"/>
         <image name="emailIcon" width="25" height="16"/>
         <image name="smackProfileIcon" width="192" height="192"/>
     </resources>
