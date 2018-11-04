@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController?.present(authVC, animated: true, completion: nil)
         }
         
+        print("\(String(describing: Auth.auth().currentUser?.uid))")
+        
         return true
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MenuVC: UIViewController {
     
@@ -19,15 +20,27 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("1")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         DataService.instance.getUserProfileInfo { (profile) in
             print("3")
             self.userProfile = profile
         }
-        print("2")
-        usernameLbl.text = "\(userProfile.firstName)  \(userProfile.lastName)"
-        infoLbl.text = "\(userProfile.weight) kg, \(userProfile.height) cm"
+        print("\(userProfile.firstName)")
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(true)
+//                print("1")
+//                DataService.instance.getUserProfileInfo { (profile) in
+//                    print("3")
+//                    self.userProfile = profile
+//                }
+//                print("\(userProfile.firstName)")
+//        //        usernameLbl.text = "\(userProfile.firstName)  \(userProfile.lastName)"
+//        //        infoLbl.text = "\(userProfile.weight) kg, \(userProfile.height) cm"
+//    }
     
     @IBAction func profileBtnPressed(_ sender: Any) {
         let loginVC = storyboard?.instantiateViewController(withIdentifier: "UserVC")
@@ -35,6 +48,18 @@ class MenuVC: UIViewController {
     }
     
     @IBAction func signOutBtnPressed(_ sender: Any) {
+        let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure you want to logout?", preferredStyle: .actionSheet)
+        let logoutAction = UIAlertAction(title: "logout?", style: .destructive) { (buttonTapped) in
+            do {
+                try Auth.auth().signOut()
+                let authVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC") as? AuthVC
+                self.present(authVC!, animated: true, completion: nil)
+            } catch {
+                print(error)
+            }
+        }
+        logoutPopup.addAction(logoutAction)
+        present(logoutPopup,animated: true, completion: nil)
     }
     
     

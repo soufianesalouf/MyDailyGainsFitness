@@ -19,7 +19,9 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         emailField.delegate = self
         passwordFeild.delegate = self
-        loginBtn.bindToKeyboard()
+        emailField.returnKeyType = .next
+        passwordFeild.returnKeyType = .done
+//        loginBtn.bindToKeyboard()
 
     }
     
@@ -27,8 +29,8 @@ class LoginVC: UIViewController {
         if emailField.text != nil && passwordFeild.text != nil {
             AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordFeild.text!) { (success, loginError) in
                 if success {
-                    self.dismissDetail()
-//                    self.dismiss(animated: true, completion: nil)
+//                    self.dismissDetail()
+                    self.dismiss(animated: true, completion: nil)
                 } else {
                     debugPrint(loginError?.localizedDescription ?? "Couldn't login")
                 }
@@ -36,8 +38,8 @@ class LoginVC: UIViewController {
                 AuthService.instance.registerUser(withEmail: self.emailField.text!, andPassword: self.passwordFeild.text!, userCreationComplete: { (success, registerError) in
                     if success {
                         AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordFeild.text!, loginComplete: { (success, nil) in
-                            self.dismissDetail()
-//                            self.dismiss(animated: true, completion: nil)
+//                            self.dismissDetail()
+                            self.dismiss(animated: true, completion: nil)
                         })
                     } else {
                         debugPrint(registerError?.localizedDescription ?? "Couldn't Register")
@@ -55,5 +57,12 @@ class LoginVC: UIViewController {
 }
 
 extension LoginVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        self.view.endEditing(true)
+//        return false
+        textField.resignFirstResponder()
+        return true
+    }
     
 }

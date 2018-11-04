@@ -40,15 +40,17 @@ class DataService {
     }
     
     func getUserProfileInfo(handler: @escaping (_ profile: UserProfile) -> ()){
-        print("ininin1")
-        REF_PROFILES.observeSingleEvent(of: .value) { (userProfileSnapshot) in
-            print("in1")
-            guard let userProfileSnapshot = userProfileSnapshot.children.allObjects as? [DataSnapshot] else { return }
-            print("3")
+        print("getUserProfile1")
+        REF_PROFILES.observeSingleEvent(of: .value, with: { (userProfileSnapshot) in
+            print("getUserProfile2")
+            guard let userProfileSnapshot = userProfileSnapshot.children.allObjects as? [DataSnapshot] else { print("getUserProfile3")
+                return }
+            print("getUserProfile4")
             for profile in userProfileSnapshot {
-                print("4")
+                print("getUserProfile5")
                 let userId = profile.childSnapshot(forPath: "userId").value as! String
                 if Auth.auth().currentUser?.uid == userId {
+                    print("getUserProfile6")
                     let firstName = profile.childSnapshot(forPath: "firstName").value as! String
                     let lastName = profile.childSnapshot(forPath: "lastName").value as! String
                     let gender = profile.childSnapshot(forPath: "gender").value as! String
@@ -59,7 +61,48 @@ class DataService {
                     handler(userProfile)
                 }
             }
+        }) { (error) in
+            debugPrint(error.localizedDescription)
         }
+//        REF_PROFILES.observe(.value) { (userProfileSnapshot) in
+//            print("getUserProfile2")
+//            guard let userProfileSnapshot = userProfileSnapshot.children.allObjects as? [DataSnapshot] else { print("getUserProfile3")
+//                return }
+//            print("getUserProfile4")
+//            for profile in userProfileSnapshot {
+//                print("getUserProfile5")
+//                let userId = profile.childSnapshot(forPath: "userId").value as! String
+//                if Auth.auth().currentUser?.uid == userId {
+//                    print("getUserProfile6")
+//                    let firstName = profile.childSnapshot(forPath: "firstName").value as! String
+//                    let lastName = profile.childSnapshot(forPath: "lastName").value as! String
+//                    let gender = profile.childSnapshot(forPath: "gender").value as! String
+//                    let birthDate = profile.childSnapshot(forPath: "birthDate").value as! String
+//                    let weight = profile.childSnapshot(forPath: "weight").value as! String
+//                    let height = profile.childSnapshot(forPath: "height").value as! String
+//                    let userProfile = UserProfile(userId: userId, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, weight: weight, height: height)
+//                    handler(userProfile)
+//                }
+//            }
+//        }
+//    }
+//        REF_PROFILES.observeSingleEvent(of: .value) { (userProfileSnapshot) in
+//            guard let userProfileSnapshot = userProfileSnapshot.children.allObjects as? [DataSnapshot] else { return }
+//            for profile in userProfileSnapshot {
+//                let userId = profile.childSnapshot(forPath: "userId").value as! String
+//                if Auth.auth().currentUser?.uid == userId {
+//                    let firstName = profile.childSnapshot(forPath: "firstName").value as! String
+//                    let lastName = profile.childSnapshot(forPath: "lastName").value as! String
+//                    let gender = profile.childSnapshot(forPath: "gender").value as! String
+//                    let birthDate = profile.childSnapshot(forPath: "birthDate").value as! String
+//                    let weight = profile.childSnapshot(forPath: "weight").value as! String
+//                    let height = profile.childSnapshot(forPath: "height").value as! String
+//                    let userProfile = UserProfile(userId: userId, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, weight: weight, height: height)
+//                    handler(userProfile)
+//                }
+//            }
+//        }
+//    }
     }
     
 }
